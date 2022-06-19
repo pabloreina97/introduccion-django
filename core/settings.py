@@ -33,6 +33,15 @@ INSTALLED_APPS = [
 
     'core',     # Todas las apps instaladas
     'blog',
+
+    'tailwind',
+    'theme'
+]
+
+TAILWIND_APP_NAME = 'theme'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
 ]
 
 MIDDLEWARE = [
@@ -119,3 +128,5 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+NPM_BIN_PATH = 'C:/Program Files/nodejs/npm.cmd'
